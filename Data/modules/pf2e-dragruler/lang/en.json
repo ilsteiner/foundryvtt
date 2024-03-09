@@ -1,0 +1,10 @@
+{
+    "pf2e-dragruler": {
+        "settings": {
+            "offTurnMovement": {
+                "name": "Ignore Off Turn Movement",
+                "hint": "Requires movement history to be enabled. Automatically resets movement history at the start of each actor's turn in combat, meaning any movement performed off turn won't effect the movement history on your turn."
+            }
+        }
+    }
+}

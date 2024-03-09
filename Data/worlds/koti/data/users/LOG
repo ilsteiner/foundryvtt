@@ -1,0 +1,7 @@
+2024/03/09-00:52:01.688 42a8 Recovering log #45
+2024/03/09-00:52:01.693 42a8 Delete type=0 #45
+2024/03/09-00:52:01.693 42a8 Delete type=3 #44
+2024/03/09-00:52:18.733 70ac Level-0 table #49: started
+2024/03/09-00:52:18.733 70ac Level-0 table #49: 0 bytes OK
+2024/03/09-00:52:18.735 70ac Delete type=0 #47
+2024/03/09-00:52:18.747 70ac Manual compaction at level-0 from '!users!OYKJOL1lWICK78tz' @ 72057594037927935 : 1 .. '!users!OYKJOL1lWICK78tz' @ 0 : 0; will stop at (end)

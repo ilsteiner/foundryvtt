@@ -1,0 +1,7 @@
+2024/03/09-00:52:02.464 42a8 Recovering log #47
+2024/03/09-00:52:02.469 42a8 Delete type=0 #47
+2024/03/09-00:52:02.470 42a8 Delete type=3 #46
+2024/03/09-00:52:18.828 70ac Level-0 table #51: started
+2024/03/09-00:52:18.828 70ac Level-0 table #51: 0 bytes OK
+2024/03/09-00:52:18.830 70ac Delete type=0 #49
+2024/03/09-00:52:18.834 70ac Manual compaction at level-0 from '!actors!1WBoIEFSt54GDpNp' @ 72057594037927935 : 1 .. '!actors.items!xtIoQWKv3xBd2gqZ.vaW2SuzWeFD3rMYr' @ 0 : 0; will stop at (end)

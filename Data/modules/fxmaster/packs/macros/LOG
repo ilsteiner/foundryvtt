@@ -1,0 +1,7 @@
+2024/03/09-00:52:03.108 42a8 Recovering log #45
+2024/03/09-00:52:03.114 42a8 Delete type=0 #45
+2024/03/09-00:52:03.114 42a8 Delete type=3 #44
+2024/03/09-00:52:18.938 70ac Level-0 table #49: started
+2024/03/09-00:52:18.938 70ac Level-0 table #49: 0 bytes OK
+2024/03/09-00:52:18.940 70ac Delete type=0 #47
+2024/03/09-00:52:18.942 70ac Manual compaction at level-0 from '!macros!A6jqMnd60ivIPBoI' @ 72057594037927935 : 1 .. '!macros!ftoNC6DqcQGQOAOp' @ 0 : 0; will stop at (end)

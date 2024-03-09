@@ -1,0 +1,37 @@
+<form autocomplete="off">
+    <table class="pf2-table">
+        <thead>
+            <tr>
+                <th>{{localize "PF2E.Actor.Creature.Sense.Label"}}</th>
+                <th>{{localize "PF2E.Actor.Creature.Sense.Acuity.Label"}}</th>
+                <th>{{localize "PF2E.Actor.Creature.Sense.RangeLabel"}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each choices as |choice key|}}
+                <tr class="sense">
+                    <td>
+                        <input type="checkbox" id="{{@root.options.id}}-{{key}}" name="{{key}}" {{checked choice.selected}} {{disabled choice.disabled}} />
+                        <label for="{{@root.options.id}}-{{key}}">{{choice.label}}</label>
+                    </td>
+                    <td>
+                        <select name="{{key}}" {{disabled (or choice.disabled choice.mandatoryAcuity)}}>
+                            {{#each ../senseAcuity as |acuity k|}}
+                                <option value={{k}}{{#if (eq k choice.acuity)}} selected{{/if}}>{{localize acuity}}</option>
+                            {{/each}}
+                        </select>
+                    </td>
+                    <td>
+                        {{#unless (or (eq key "lowLightVision") (eq key "greaterDarkvision") (eq key "darkvision"))}}
+                            <input type="number" id="input_value_{{key}}" name="{{key}}" value="{{choice.value}}" min="0" max="1000" {{choice.disabled}} />
+                        {{/unless}}
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+    <button type="submit" class="trait-footer">
+        <i class="fa-regular fa-save"></i>{{localize "DOCUMENT.Update" type=(localize documentType)}}
+    </button>
+</form>

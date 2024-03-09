@@ -1,0 +1,22 @@
+<div class="tab feats feats-pane" data-group="primary" data-tab="feats">
+    {{#each feats as |section|}}
+        <div class="feat-section" data-category-id="{{section.id}}">
+            <h3 class="header">
+                {{localize section.label}}
+                <button
+                    type="button"
+                    class="feat-browse"
+                    data-type="feat"
+                    data-filter="{{section.featFilter}},conjunction-or"
+                >
+                    <i class="fas fa-fw fa-search"></i>{{localize "PF2E.BrowseLabel"}}
+                </button>
+            </h3>
+            <ol class="actions-list directory-list">
+                {{#each section.feats as |featSlot|}}
+                    {{> "systems/pf2e/templates/actors/character/partials/feat-slot.hbs" featSlot=featSlot featFilter=section.featFilter}}
+                {{/each}}
+            </ol>
+        </div>
+    {{/each}}
+</div>
