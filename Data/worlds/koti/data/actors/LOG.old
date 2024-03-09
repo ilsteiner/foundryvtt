@@ -1,3 +1,5 @@
-2024/03/08-16:34:18.488 1be0 Recovering log #45
-2024/03/08-16:34:18.493 1be0 Delete type=0 #45
-2024/03/08-16:34:18.493 1be0 Delete type=3 #43
+2024/03/09-12:18:31.306 df0 Recovering log #62
+2024/03/09-12:18:31.306 df0 Level-0 table #64: started
+2024/03/09-12:18:31.311 df0 Level-0 table #64: 8353 bytes OK
+2024/03/09-12:18:31.317 df0 Delete type=0 #62
+2024/03/09-12:18:31.317 df0 Delete type=3 #61
